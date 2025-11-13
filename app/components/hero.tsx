@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Marquee } from "@devnomic/marquee";
-import "@devnomic/marquee/dist/index.css";
 
 const Hero = () => {
   return (
