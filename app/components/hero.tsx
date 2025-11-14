@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Marquee } from "@devnomic/marquee";
 
 const Hero = () => {
   return (
-    <div className="max-w-3xl mx-auto min-h-screen flex flex-col justify-center items-start px-6 sm:px-8 space-y-4">
+    <div className=" min-h-screen flex flex-col justify-center items-start space-y-4">
       <Image
         src={"/dp.jpg"}
         alt="dp"
@@ -27,13 +26,6 @@ const Hero = () => {
             Available for new project
           </Button>
         </div>
-      </div>
-      <div className="">
-        <Marquee fade={true}>
-          <div>Content 1</div>
-          <div>Content 2</div>
-          <div>Content 3</div>
-        </Marquee>
       </div>
     </div>
   );
