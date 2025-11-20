@@ -17,7 +17,7 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const serviceID =
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_pki7w44";
@@ -27,7 +27,7 @@ const ContactForm = () => {
       process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "v4xrfO__Rz_U3roqy";
 
     emailjs
-      .sendForm(serviceID, templateID, e.target, publicKey)
+      .sendForm(serviceID, templateID, e.target as HTMLFormElement, publicKey)
       .then((result) => {
         console.log("EmailJS success:", result.text);
         setIsSubmitted(true);
@@ -38,12 +38,11 @@ const ContactForm = () => {
       })
       .catch((error) => {
         console.log("EmailJS error:", error);
-        // Optionally handle error state here (e.g., show error message)
       });
   };
 
   return (
-    <section className="py-12 px-6 sm:px-8">
+    <section className="py-12 px-6 sm:px-8" id="contact">
       <div className="p-8">
         <h2 className="text-3xl font-bold text-black mb-4 text-start">
           Get in touch

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { File, Github, House, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -17,7 +18,7 @@ export default function Header() {
       <div className="hidden md:block h-6 w-px bg-gray-200" />
       <nav aria-label="Social links" className="flex items-center gap-2">
         <a
-          href="https://twitter.com"
+          href="https://x.com/abdullahiola_05"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
@@ -27,7 +28,7 @@ export default function Header() {
           <Twitter size={20} color="#525252" />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/OlaiwonAbdullahi"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -38,7 +39,7 @@ export default function Header() {
         </a>
 
         <a
-          href="/resume.pdf"
+          href="https://docs.google.com/document/d/1PmtyGVVcy9xQnzoNNcAow_dvKYMAbac32cX0d1jitcM/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Resume"
@@ -51,9 +52,11 @@ export default function Header() {
 
       <div className="hidden md:block h-6 w-px bg-gray-200" />
       <div className="ml-2">
-        <Button className="bg-primary px-4 py-2 rounded-lg shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary/50">
-          Contact Me
-        </Button>
+        <Link href={"#contact"}>
+          <Button className="bg-primary px-4 py-2 rounded-lg shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary/50">
+            Contact Me
+          </Button>
+        </Link>
       </div>
     </header>
   );
