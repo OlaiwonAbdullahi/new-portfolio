@@ -12,7 +12,7 @@ const Hero = () => {
         className="rounded-full "
       />
       <div className="space-y-2">
-        <h2 className="leading-tight text-[2.75rem] sm:text-[3rem] font-semibold">
+        <h2 className="leading-tight text-[2rem] sm:text-[3rem] font-semibold">
           Hey, I&apos;m Abdullahi Olaiwon. <br />
           <span>Software Engineer</span>
         </h2>
