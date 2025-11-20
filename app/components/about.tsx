@@ -39,7 +39,7 @@ const About = () => {
             >
               <div className="overflow-hidden rounded-lg w-full h-[250px] bg-gray-100 flex items-center justify-center">
                 <img
-                  src={"/pic2.jpg"}
+                  src={"/dp2.jpg"}
                   alt="left"
                   className="object-cover w-full h-full"
                 />

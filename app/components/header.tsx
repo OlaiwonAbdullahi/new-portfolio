@@ -4,7 +4,7 @@ import { File, Github, House, Twitter } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="w-full sticky top-0 max-w-sm mx-auto py-4 px-6 bg-white/20 backdrop-blur-md border border-gray-100 rounded-2xl flex items-center justify-between gap-4">
+    <header className="w-full sticky top-0 max-w-sm mx-auto z-50 py-4 px-6 bg-white/20 backdrop-blur-md border border-gray-100 rounded-2xl flex items-center justify-between gap-4">
       <div className="flex items-center">
         <button
           aria-label="Home"
