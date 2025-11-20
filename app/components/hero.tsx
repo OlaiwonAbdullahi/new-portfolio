@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,7 +21,9 @@ const Hero = () => {
           Solving complex societal problems using 1&apos;s and 0&apos;s.
         </p>
         <div className="flex flex-wrap gap-4 pt-2">
-          <Button className="text-lg h-12 px-8 rounded-xl">Hire Me</Button>
+          <Link href={"https://wa.link/zu9ue9"}>
+            <Button className="text-lg h-12 px-8 rounded-xl">Hire Me</Button>
+          </Link>
           <Button className="text-lg h-12 px-6 bg-green-300 text-green-900 rounded-full flex items-center gap-2">
             <span className="h-3 w-3 bg-green-900 rounded-full animate-pulse"></span>
             Available for new project
