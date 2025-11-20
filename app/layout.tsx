@@ -21,9 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="Z9ImB_0s-j0OhbxPBbpqLmtukXX9r2W81ustqCf1Lfs"
+        />
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-40F4B6REQ8"
+          src="https://www.googletagmanager.com/gtag/js?id=G-W3MX88S0B8"
           strategy="afterInteractive"
         ></Script>
         <Script id="google-analytics" strategy="afterInteractive">
@@ -32,7 +36,7 @@ export default function RootLayout({
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-40F4B6REQ8');
+  gtag('config', 'G-W3MX88S0B8');
   `}
         </Script>
       </head>

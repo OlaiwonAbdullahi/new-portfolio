@@ -45,7 +45,7 @@ const Project = () => {
 
       image: "/eccormerce.png",
       description:
-        "Official site for Nigerian Musician: Olamide (Badoo), featuring tour schedules, ticket purchases, music releases, and exclusive content.",
+        "Built an Ecommerce website featuring product listing,authentication,checkout,cart, and exclusive content.",
 
       href: "https://exclusive-ecommerce-store-abdul.vercel.app/",
     },
