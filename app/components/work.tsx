@@ -24,7 +24,7 @@ const experiences = [
 
 const WorkExperience = () => {
   return (
-    <section className=" border-t border-t-[#e6e6e6] py-22">
+    <section className=" border-t border-t-[#e6e6e6] py-22 px-6 sm:px-8">
       <h2 className="text-3xl font-bold text-gray-900 mb-8 text-start">
         Work Experience
       </h2>

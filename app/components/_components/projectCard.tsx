@@ -40,7 +40,7 @@ export function ProjectCard({
 
       <CardFooter className="pt-2">
         <Button
-          className="w-fit justify-between group bg-[#e5e5e5] text-primary text-base"
+          className="w-fit justify-between group bg-[#e5e5e5] text-primary text-base hover:bg-[#e5e5e5]"
           asChild
         >
           <a href={href} target="_blank" rel="noopener noreferrer">

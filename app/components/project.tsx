@@ -2,25 +2,60 @@ import { Marquee } from "@/components/ui/marquee";
 import { ProjectCard } from "./_components/projectCard";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const Project = () => {
   const projects = [
     {
-      title: "Pxxl App",
-      image: "/project1.png",
+      title: "Moyinol",
+
+      image: "/project4.png",
       description:
-        "Enterprise-grade cloud deployment platform enabling instant deployment of websites, APIs, and applications with global CDN and automated scaling.",
+        "Official site for Moyinol Consulting: Moyinol Consulting Limited combines deep regulatory expertise with innovative solutions to help financial institutions stay compliant,  and prepared for future challenges in AML.",
+      category: "Entertainment",
+      href: "https://www.moyinolconsulting.com/",
+    },
+
+    {
+      title: "Lisa Tech",
+      image: "/project3.png",
+      description:
+        "Lisa Tech website is a Landing Page for an AI-powerd drones that intelligently identify ,map,and report waste. ",
       category: "Platform",
-      href: "#",
+      href: "https://dronewastemgt.vercel.app/",
     },
     {
-      title: "Olamide's Tour Website",
+      title: "SmartPay",
+      image: "/smartpay.png",
+      description:
+        "SmartPay is a user-friendly mobile wallet platform designed to simplify bill payments, top-ups, and purchases directly from your digital wallet.",
+      href: "https://smartpay-psi.vercel.app/",
+    },
+    {
+      title: "Life Of Shiz",
 
       image: "/project1.png",
       description:
+        "Official site for an Engineer & Content Creator: Shizrae, featuring her Journey, Personality, Brand Timeline, and exclusive content.",
+
+      href: "https://lifeofshiz.vercel.app/",
+    },
+    {
+      title: "Exclusive Store",
+
+      image: "/eccormerce.png",
+      description:
         "Official site for Nigerian Musician: Olamide (Badoo), featuring tour schedules, ticket purchases, music releases, and exclusive content.",
-      category: "Entertainment",
-      href: "#",
+
+      href: "https://exclusive-ecommerce-store-abdul.vercel.app/",
+    },
+    {
+      title: "Unity High School ",
+
+      image: "/unity.png",
+      description:
+        "Official site for Unity High School: featuring the school details, Contact Details, and exclusive content.",
+      href: "https://unityhighschool.vercel.app/",
     },
   ];
   return (
@@ -62,9 +97,11 @@ const Project = () => {
           ))}
         </div>
         <div className="mt-5">
-          <Button>
-            View All <ChevronRight />
-          </Button>
+          <Link href={"https://github.com/OlaiwonAbdullahi/"}>
+            <Button>
+              View All <ChevronRight />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
