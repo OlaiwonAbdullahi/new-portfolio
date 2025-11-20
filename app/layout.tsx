@@ -21,6 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/png" href="/dp.jpg" />
+        <link rel="shortcut icon" href="/dp.jpg" />
+        <link rel="apple-touch-icon" href="/dp.jpg" />
+
         <meta
           name="google-site-verification"
           content="Z9ImB_0s-j0OhbxPBbpqLmtukXX9r2W81ustqCf1Lfs"
