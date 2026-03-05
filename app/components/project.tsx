@@ -24,7 +24,7 @@ const Project = () => {
     },
     {
       title: "Escro Marketplace",
-      image: "/project4.png",
+      image: "/escro.png",
       description:
         "Escro is a secure multi-vendor marketplace where every transaction is protected by escrow technology — funds are only released once delivery is confirmed. The platform serves customers, store owners, couriers, and logistics agencies with tools like a no-code store builder, AI route optimization, and real-time order tracking.",
       category: "E-Commerce",
