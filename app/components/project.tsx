@@ -7,13 +7,37 @@ import Link from "next/link";
 const Project = () => {
   const projects = [
     {
+      title: "Wishcube App",
+      image: "/wishcube.png",
+      description:
+        "WishCube is an AI-powered celebration platform that lets you create personalized animated greeting cards, host virtual party rooms, and send integrated digital gifts — all in one place. Features include voice message narration, confetti animations, RSVP tracking, and multi-channel sharing via WhatsApp, Instagram, and email.",
+      category: "Entertainment",
+      href: "https://wishcube.abdullahiolaiwon.xyz/",
+    },
+    {
+      title: "Mantle Mentor Webapp",
+      image: "/mantle.png",
+      description:
+        "The Mantle Mentorship Program is a virtual mentorship platform dedicated to transferring practical and life-based skills to the next generation of leaders. Running 4 cohorts per year globally, it connects mentees with experienced mentors to provide clarity, career direction, and personal development support.",
+      category: "Education",
+      href: "https://www.mantlementor.com/en",
+    },
+    {
+      title: "Escro Marketplace",
+      image: "/project4.png",
+      description:
+        "Escro is a secure multi-vendor marketplace where every transaction is protected by escrow technology — funds are only released once delivery is confirmed. The platform serves customers, store owners, couriers, and logistics agencies with tools like a no-code store builder, AI route optimization, and real-time order tracking.",
+      category: "E-Commerce",
+      href: "https://escrostore.netlify.app/",
+    },
+    {
       title: "Moyinol",
 
       image: "/project4.png",
       description:
         "Official site for Moyinol Consulting: Moyinol Consulting Limited combines deep regulatory expertise with innovative solutions to help financial institutions stay compliant,  and prepared for future challenges in AML.",
       category: "Entertainment",
-      href: "https://www.moyinolconsulting.com/",
+      href: "https://www.moyinolconsulting.org/",
     },
 
     {
