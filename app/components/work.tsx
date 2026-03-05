@@ -11,7 +11,7 @@ const experiences = [
     end: "Present",
     role: "Frontend Engineer",
     company: "MyfitHub",
-    link: "http://beta.myfithub.live",
+    link: "http://beta.myfithub.life",
   },
   {
     start: "April 2025",
