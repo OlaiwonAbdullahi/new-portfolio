@@ -1,12 +1,5 @@
 const experiences = [
   {
-    start: "Aug. 2025",
-    end: "Present",
-    role: "Frontend Engineer",
-    company: "Lanstellar",
-    link: "http://lanstellar.com",
-  },
-  {
     start: "June 2025",
     end: "Present",
     role: "Frontend Engineer",
@@ -14,8 +7,15 @@ const experiences = [
     link: "http://beta.myfithub.life",
   },
   {
+    start: "Aug. 2025",
+    end: "Jan. 2026",
+    role: "Frontend Engineer",
+    company: "Lanstellar",
+    link: "http://lanstellar.com",
+  },
+  {
     start: "April 2025",
-    end: "Present",
+    end: "Nov. 2025",
     role: "Junior Frontend Developer",
     company: "Lumaara",
     link: "http://lumaara.org",
@@ -24,28 +24,24 @@ const experiences = [
 
 const WorkExperience = () => {
   return (
-    <section className=" border-t border-t-[#e6e6e6] py-22 px-6 sm:px-8">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-start">
-        Work Experience
-      </h2>
-      <div className="space-y-6">
-        {experiences.map((exp, index) => (
-          <div key={index} className="flex justify-between items-start ">
-            <div className="flex-1">
-              <p className="text-base font-medium text-gray-500">
-                {exp.start} - {exp.end}
-              </p>
-            </div>
-            <div className="flex gap-2 text-right">
-              <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                {exp.role} at
-              </h3>
-              <a href={exp.link}>
-                <p className="text-[#3b82f6] flex items-center gap-1 bg-[#eef4ff] py-0.5 px-2  rounded-sm hover:underline font-medium">
-                  <div className="border-2 border-[#3b82f6] bg-[#eef4ff] h-2 w-2 rounded-full"></div>{" "}
-                  {exp.company}
-                </p>
+    <section className="mt-20">
+      <h2 className="text-[24px] leading-[1.2] text-ink">Experience</h2>
+      <div className="mt-6 flex flex-col">
+        {experiences.map((exp, i) => (
+          <div key={exp.company}>
+            {i > 0 && <hr className="border-t border-hairline" />}
+            <div className="flex flex-col gap-2 py-4">
+              <a
+                href={exp.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-fit cursor-pointer text-[18px] leading-[1.3] text-ink underline decoration-transparent underline-offset-4 transition-colors duration-150 ease-in-out hover:decoration-ink"
+              >
+                {exp.company}
               </a>
+              <p className="text-[12px] uppercase leading-[1.2] tracking-[0.5px] text-ink-soft">
+                {exp.role} · {exp.start} — {exp.end}
+              </p>
             </div>
           </div>
         ))}

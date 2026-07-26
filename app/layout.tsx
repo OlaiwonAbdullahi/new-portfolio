@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Afacad_Flux } from "next/font/google";
+import { Newsreader, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const afacadFlux = Afacad_Flux({
-  variable: "--font-afacadFlux",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+});
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -45,7 +53,11 @@ export default function RootLayout({
         </Script>
       </head>
 
-      <body className={`${afacadFlux.variable}  antialiased`}>{children}</body>
+      <body
+        className={`${newsreader.variable} ${dmSans.variable} antialiased bg-canvas text-ink`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
