@@ -2,10 +2,7 @@ const links = [
   { label: "Email", href: "mailto:olaiwonabdullahi@gmail.com" },
   { label: "GitHub", href: "https://github.com/OlaiwonAbdullahi" },
   { label: "Twitter", href: "https://x.com/abdullahiola_05" },
-  {
-    label: "Resume",
-    href: "https://docs.google.com/document/d/1PmtyGVVcy9xQnzoNNcAow_dvKYMAbac32cX0d1jitcM/edit?usp=sharing",
-  },
+  { label: "Resume", href: "/resume" },
 ];
 
 const Connect = () => {
